@@ -12,7 +12,9 @@ class DirectoresController extends Controller
      */
     public function index()
     {
-        //
+         //consultar a la base de datos con todos los parametros 
+         $directores=Directores::all();
+         return view('directores.index', compact('directores'));
     }
 
     /**

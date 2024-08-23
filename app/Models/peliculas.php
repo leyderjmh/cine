@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class peliculas extends Model
 {
-    use HasFactory;
+    protected $table='peliculas';
+    protected $primarikey='id';
+    protected $fillable=['titulo','descripcion','año','duracion'];
 }

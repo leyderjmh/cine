@@ -12,7 +12,9 @@ class PeliculasController extends Controller
      */
     public function index()
     {
-        //
+        //consultar a la base de datos con todos los parametros 
+        $peliculas=peliculas::all();
+        return view('peliculas.index', compact('peliculas'));
     }
 
     /**

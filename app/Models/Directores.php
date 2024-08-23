@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Directores extends Model
 {
-    use HasFactory;
+    protected $table='directores';
+    protected $primarikey='id';
+    protected $fillable=['nombre','biografia','fecha_nac'];
 }

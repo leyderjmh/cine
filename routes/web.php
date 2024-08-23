@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\PeliculasController;
+use App\Http\Controllers\DirectoresController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,6 +20,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('categorias',CategoriaController::class);
+Route::resource('peliculas',PeliculasController::class);
+Route::resource('directores',DirectoresController::class);
 
 Auth::routes();
 
